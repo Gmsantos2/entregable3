@@ -13,7 +13,7 @@ function App() {
     .catch((err)  => console.log(err)) 
   }, [])
   return (
-    <main  className="bg-[url('/bg.png')] bg-repeat-y min-h-screen ">
+    <main  className="bg-[url('/bg.png')] bg-repeat-y min-h-screen bg-cover">
       {
         locationInfo ? ( 
         <section>

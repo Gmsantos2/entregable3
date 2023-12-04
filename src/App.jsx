@@ -13,9 +13,19 @@ function App() {
     .catch((err)  => console.log(err)) 
   }, [])
   return (
-    <main className="bg-[url('/bg.png')] bg-no-repeat min-h-screen bg-cover bg-center">
-      <Location locationInfo={locationInfo} setLocationInfo={setLocationInfo}/>
-      <ResidentList residents={locationInfo?.residents ?? []}/>
+    <main className="bg-black bg-no-repeat min-h-screen bg-cover bg-center">
+      {
+        locationInfo ? ( 
+          <main className="bg-[url('/bg.png')] bg-no-repeat min-h-screen bg-cover bg-center">
+        <Location locationInfo={locationInfo} setLocationInfo={setLocationInfo}/> 
+        <ResidentList residents={locationInfo?.residents ?? []}/>
+        </main>
+        ): 
+        (
+          <h1 className="text-white font-firaCode text-xl">Loading...</h1>
+        )
+      }
+      
     </main>
   );
 }

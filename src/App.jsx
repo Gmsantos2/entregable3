@@ -13,13 +13,13 @@ function App() {
     .catch((err)  => console.log(err)) 
   }, [])
   return (
-    <main className="bg-black bg-no-repeat min-h-screen bg-cover bg-center">
+    <main  className="bg-[url('/bg.png')] bg-repeat-y min-h-screen ">
       {
         locationInfo ? ( 
-          <main className="bg-[url('/bg.png')] bg-no-repeat min-h-screen bg-cover bg-center">
+        <section>
         <Location locationInfo={locationInfo} setLocationInfo={setLocationInfo}/> 
         <ResidentList residents={locationInfo?.residents ?? []}/>
-        </main>
+        </section>
         ): 
         (
           <h1 className="text-white font-firaCode text-xl">Loading...</h1>

@@ -11,31 +11,31 @@ const Location = ({ locationInfo, setLocationInfo }) => {
             .catch((err) => console.log(err));
     }
     return (
-        <section>
-            <div className="h-[284px] bg-[url('/backgroundH.svg')]">
+        <section className="w-screen">
+            <div className="w-screen h-[290px] ">
                 <div className="relative translate-y-[-2%] left-1/2 
-                -translate-x-1/2 w-[670px] h-auto ">
+                -translate-x-1/2 w-[745px] h-[352px] ">
                 <img className="fixed" src="/portal.svg" alt="" />
                 </div>
               
                 <img className="absolute top-10 left-1/2 
-                -translate-x-1/2 w-[295px] h-auto mx-auto" src="/logo.png" alt="" />
+                -translate-x-1/2 w-[340px] h-auto mx-auto" src="/logo.png" alt="" />
             
             </div>
             <form className="flex justify-center" onSubmit={handleSubmit} >
-                <div className="p-4">
+                <div className="flex p-4 items-center justify-center">
                     <input
-                        className="bg-black/60 text-white text-sm font-medium font-firaCode border-green-400 border-2 pt-2 pb-2 pl-6 pr-6"
+                        className="bg-black/60 text-white text-base font-medium font-firaCode border-green-400 border-2 pt-2 pb-2 pl-6 pr-6"
                         type="text"
                         name="newLocation"
                         placeholder="Type a location ID..."
                         required
                     />
                     <button type="submit">
-                        <div className="flex gap-4 items-center  bg-green-400 p-2  
-                        ">
-                        <span className="text-white text-xs font-medium font-firaCode">Search</span>
-                        <IconSearch />
+                        <div className="flex gap-4 items-center  bg-green-600 p-2   
+                        border-green-400 border-t-2 border-r-2 border-b-2">
+                        <span className="hidden sm:block text-white text-xs font-medium font-firaCode">Search</span>
+                        <IconSearch className="text-white" />
                         </div>
                         
                     </button>

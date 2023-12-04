@@ -29,7 +29,7 @@ const ResidentList = ({ residents }) => {
                         <li key={page}>
                             <button 
                             className={`${currentPage === page ? "bg-green-950 pt-2 pb-2 pl-4 pr-4 text-white rounded-sm"
-                            : "bg-gray-800 pt-2 pb-2 pl-4 pr-4 font-medium text-white rounded-md"}`}
+                            : "bg-gray-800 pt-2 pb-2 pl-4 pr-4 font-medium text-white rounded-sm"}`}
                             onClick={() => handleNewPage(page)}>{page}</button>
                         </li>
                     ))

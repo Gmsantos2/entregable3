@@ -11,10 +11,10 @@ const Location = ({ locationInfo, setLocationInfo }) => {
             .catch((err) => console.log(err));
     }
     return (
-        <section className="w-screen">
+        <section >
             <div className="w-screen h-[290px] ">
                 <div className="relative translate-y-[-2%] left-1/2 
-                -translate-x-1/2 w-[745px] h-[352px] ">
+                -translate-x-1/2 w-[745px] h-[322px] ">
                 <img className="fixed" src="/portal.svg" alt="" />
                 </div>
               

@@ -12,11 +12,11 @@ const ResidentCard = ({residentURL}) => {
     const BgStatus = {
         Alive: 'bg-green-500', 
         Dead: 'bg-red-500', 
-        uknown: 'bg-gray-500'
+        unknown: 'bg-gray-500'
     }
         
     return (
-    <article>
+    <article className="hover:bg-green-950">
         <header className="relative">
             <img className="border-green-400 border-t-2 border-r-2 border-l-2 border-b-1" src={residentInfo?.image} alt="" />
             <div className="flex items-center gap-2 absolute bottom-6 left-1/2 
